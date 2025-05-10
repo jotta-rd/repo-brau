@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Assistant:wght@200..800&family=Audiowide&family=Noto+Kufi+Arabic:wght@100..900&family=Oxanium:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-color: #BAD7F8;
+    font-family: Albert Sans;
+    font-size: 15px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+button{
+    background-color: #7fb5f3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.em{
+    font-size: 3em;
+}
+
+.px{
+    font-size: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+.rrss{
+    height: 5vh;
+    width: 5vh;
+}
