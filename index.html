@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    <header>
-        <img src="./media/logo_brauhaus.png" alt="logo_brauhaus">
-        <h1 class="em">Estudio de Belleza</h1>
-        <p class="px">Este es un párrafo de ejemplo</p>
-        <nav>
+    <header class="header">
+        <img src="./media/logo_brauhaus.png" class="logo" alt="logo_brauhaus">
+        
+        <nav class="navbar">
             <ul>
                 <li>
                 <a href="./pages/servicios.html">Servicios</a>
@@ -28,13 +27,15 @@
                 </li>
                 <li>
                 <a href="./pages/checkout.html">
-                <img src="./media/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png" alt="shop" class="rrss"></a>
+                <img src="./media/cart.svg" alt="carrito" class="carrito">
+                </a>
                 </li>
             </ul>
         </nav>
+        
     </header>
 
-    <main>
+    <main class="main">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -58,14 +59,20 @@
         </div>
     </main>
 
-    <footer>
-        <h3 class>Derechos Reservados. Buenos Aires 2025</h3> 
-        <a href="https://www.google.com.ar/maps/place/Brau+Haus+Studio/@-34.5477565,-58.4677871,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb7a02e8e3115:0x198e54efa5df13f3!8m2!3d-34.5477565!4d-58.4652122!16s%2Fg%2F11j7w593gc?hl=es&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D">
-        <img src="./media/5340292_locate_location_map_pin_icon.png" alt="ubicacion" class="rrss"></a>
-        <a href="https://www.instagram.com/brauhaus.estudio/">
-        <img src="./media/2959748_instagram_photo_share_icon.png" alt="Instagram" class="rrss"></a>
-        <a href="https://www.facebook.com/brauhaus.estudio">
-        <img src="./media/2959749_facebook_icon.png" alt="Facebook" class="rrss"></a>
+    <footer class="footer">
+        <p class="footer-legal">Derechos Reservados. Buenos Aires 2025</p>
+
+        <div class="footer-rrss">
+            <a href="https://www.google.com.ar/maps/place/Brau+Haus+Studio/" target="_blank">
+            <img src="./media/5340292_locate_location_map_pin_icon.png" alt="ubicacion" class="rrss">
+            </a>
+            <a href="https://www.instagram.com/brauhaus.estudio/" target="_blank">
+            <img src="./media/2959748_instagram_photo_share_icon.png" alt="Instagram" class="rrss">
+            </a>
+            <a href="https://www.facebook.com/brauhaus.estudio" target="_blank">
+            <img src="./media/2959749_facebook_icon.png" alt="Facebook" class="rrss">
+            </a>
+        </div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">

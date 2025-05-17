@@ -1,14 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Assistant:wght@200..800&family=Audiowide&family=Noto+Kufi+Arabic:wght@100..900&family=Oxanium:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body{
-    background-color: #BAD7F8;
-    font-family: Albert Sans;
-    font-size: 15px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color: rgb(255, 255, 255);
+body{
+    background-color: #ffffff;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);  /* 12 columnas horizontales */
+    grid-template-rows: auto 1fr auto;       /* header | main | footer */
+    height: 100vh;
 }
+
+/* HEADER → mini-grid interna */
+.header{
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo | espacio | navbar */
+    align-items: center;
+    padding: 1rem 2rem;
+    grid-column: 1 / 13;
+    grid-row: 1;
+}
+
+.logo{
+    max-width: 200px;
+}
+
+/* NAVBAR en header */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #bdbdbd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+
+.main{
+    grid-column: 1 / 13;
+    grid-row: 2;
+    padding: 1rem 2rem;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+    grid-column: 1 / 13;
+    grid-row: 3;
+    background-color: #fff;
+    font-size: 0.6rem;
+}
+
+.footer-legal{
+    justify-self: start;
+    color: #bdbdbd;
+    font-size: 0.8rem;
+}
+
+
+.footer-rrss {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 button{
     background-color: #7fb5f3;
     border: none;
@@ -34,6 +121,11 @@ li{
 }
 
 .rrss{
-    height: 5vh;
-    width: 5vh;
+    height: 24px;
+    width: 24px;
+}
+
+.carrito{
+    height: 2vh;
+    width: 2vh;
 }
