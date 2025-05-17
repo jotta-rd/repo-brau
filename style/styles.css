@@ -18,6 +18,9 @@ body{
 
 /* HEADER → mini-grid interna */
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: grid;
     grid-template-columns: auto 1fr auto; /* logo | espacio | navbar */
     align-items: center;
@@ -62,6 +65,9 @@ body{
 
 
 .footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -127,6 +133,50 @@ li{
     height: 2vh;
     width: 2vh;
 }
+
+
+/*cuidados*/
+.main-cuidados{
+    grid-column: 1 / 13;
+    grid-row: 2;
+    padding: 1.5rem 2rem
+}
+
+.cuidados-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(2, auto);   
+    gap: 0.5rem;
+}
+
+.cuadro img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cuadro.texto{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*booknow*/
 
