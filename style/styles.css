@@ -75,26 +75,15 @@ body{
 .footer-legal{
     justify-self: start;
     color: #bdbdbd;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
-.footer-rrss {
+.footer-rrss{
     justify-self: end;
     display: flex;
     gap: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 button{
     background-color: #7fb5f3;
@@ -107,9 +96,18 @@ button{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    grid-column: 1 / -1;          
+    justify-self: center;         
+    margin-top: 1rem;
 }
+
+p{
+    justify-self: center;         
+    margin-top:;
+}
+
 .em{
-    font-size: 3em;
+    font-size: 1em;
 }
 
 .px{
@@ -128,4 +126,113 @@ li{
 .carrito{
     height: 2vh;
     width: 2vh;
+}
+
+/*booknow*/
+
+.formulario{
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.formulario textarea{
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.form-multiple{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-option {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.formulario button{
+    grid-column: 1 / -1; /* hace que el botón ocupe ambas columnas */
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+
+
+
+/*responsive*/
+
+@media (max-width: 768px) {
+body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.navbar{
+    justify-content: center;
+}
+
+.navbar ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main{
+    padding: 0.5rem;
+}
+
+.footer{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+    font-size: 0.7rem;
+}
+
+.footer-legal{
+    justify-self: center;
+}
+
+.footer-rrss{
+    justify-self: center;
+}
+
+.navbar-toggler{
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;        
+}
+
+.navbar-toggler-icon{
+    width: 24px;
+    height: 24px;
+}
+.icono-hamburguesa{
+    width: 24px;
+    height: 24px;
+}
+
+.formulario{
+    padding: 1.5rem;
 }
