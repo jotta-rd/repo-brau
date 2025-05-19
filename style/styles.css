@@ -11,18 +11,18 @@ body{
     font-family: 'Albert Sans', sans-serif;
     font-size: 15px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);  /* 12 columnas horizontales */
-    grid-template-rows: auto 1fr auto;       /* header | main | footer */
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: auto 1fr auto;     
     height: 100vh;
 }
 
-/* HEADER → mini-grid interna */
+
 .header{
     position: sticky;
     top: 0;
     z-index: 1000;
     display: grid;
-    grid-template-columns: auto 1fr auto; /* logo | espacio | navbar */
+    grid-template-columns: auto 1fr auto; 
     align-items: center;
     padding: 1rem 2rem;
     grid-column: 1 / 13;
@@ -33,7 +33,7 @@ body{
     max-width: 200px;
 }
 
-/* NAVBAR en header */
+
 .navbar{
     display: flex;
     align-items: center;
@@ -215,18 +215,6 @@ li{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*booknow*/
 
 .formulario{
@@ -255,17 +243,35 @@ li{
     gap: 0.5rem;
 }
 
-.form-option {
+.form-option{
     display: flex;
     align-items: start;
     gap: 0.5rem;
 }
 
 .formulario button{
-    grid-column: 1 / -1; /* hace que el botón ocupe ambas columnas */
+    grid-column: 1 / -1; 
     justify-self: center;
     margin-top: 1rem;
 }
+
+
+/*servicios*/
+
+.main-servicios{
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    grid-column: 1 / 13;
+    grid-row: 2;
+    min-height: 80vh;
+}
+
+.accordion-wrapper{
+    width: 100%;
+    max-width: 700px;
+}
+
 
 
 
