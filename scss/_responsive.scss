@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    body {
+    grid-template-columns: 1fr;
+    }
+
+    .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    }
+
+    .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .main {
+    padding: 0.5rem;
+    }
+
+    .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+
+    .formulario {
+    padding: 1.5rem;
+    }
+}

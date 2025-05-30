@@ -1,0 +1,81 @@
+.main, .main-cuidados, .main-servicios {
+    grid-column: 1 / 13;
+    grid-row: 2;
+    padding: 1rem 2rem;
+}
+
+.main-cuidados .cuidados-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+        .cuadro img {
+        width: 100%;
+        height: auto;
+        }
+
+        .texto {
+        font-family: $font-main;
+        text-align: justify;
+        line-height: 1.6;
+        }
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+
+        .product-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: $border-radius;
+        background: #fff;
+
+            img {
+            width: 100%;
+            }
+
+            .producto-descrip {
+            padding: 1rem;
+            font-size: 0.9rem;
+            }
+
+            .product-buttons {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ddd;
+
+                .add {
+                @include button-style($primary-color);
+                }
+
+                .mas {
+                background: #d2d1d1;
+                border-left: 1px solid #ddd;
+                }
+            }
+        }
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+
+        textarea {
+        min-height: 80px;
+        resize: vertical;
+        }
+
+        button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-top: 1rem;
+        }
+}

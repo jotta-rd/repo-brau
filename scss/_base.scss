@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: $font-main;
+    font-size: $font-size-base;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+button {
+    @include button-style($primary-color);
+    margin: 4px 2px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 1rem;
+}
