@@ -1,0 +1,15 @@
+#  Ignorar el archivo CSS generado por Sass
+styles.css
+styles.css.map
+
+#  Ignorar dependencias si usás Node.js 
+node_modules/
+
+#  Ignorar archivos de configuración local de VSCode
+.vscode/
+
+#  Ignorar archivos del sistema
+.DS_Store
+
+#  Ignorar archivos de logs temporales
+*.log
