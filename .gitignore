@@ -1,7 +1,3 @@
-#  Ignorar el archivo CSS generado por Sass
-styles.css
-styles.css.map
-
 #  Ignorar dependencias si usás Node.js 
 node_modules/
 
