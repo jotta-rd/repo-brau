@@ -18,6 +18,7 @@
         font-family: $font-main;
         text-align: justify;
         line-height: 1.6;
+        grid-column: span 1;
         }
 }
 
@@ -78,4 +79,22 @@
         justify-self: center;
         margin-top: 1rem;
         }
+}
+
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-multiple {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
