@@ -32,8 +32,26 @@
     }
 
     .footer {
-    grid-template-columns: 1fr;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    }
+
+    .footer-rrss {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px;
+    }
+
+.footer-rrss a {
+    display: inline-block;
+    }
+
+.rrss {
+    width: 30px; 
+    height: auto;
     }
 
     .formulario {
